@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -29,23 +30,22 @@
                             class="material-icons">mail</span>
                     </div>
                     <div class="input-field">
-                        <input type="number" placeholder="Phone number" required> <span
-                            class="material-icons">phone</span>
+                        <input type="tel" placeholder="(xx)9xxxx-xxxx" required
+                            pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}"> <span class="material-icons">phone</span>
                     </div>
 
                     <div class="input-box">
                         <div class="input-field">
-                            <input type="password" placeholder="password" required > <span
-                                class="material-icons">lockalt</span>
+                            <input type="password" placeholder="password" required minlength="5" maxlength="8"> <span
+                                class="material-icons">lockopen</span>
                         </div>
                         <div class="input-field">
-                            <input type="password" placeholder="Confirm Password">
-                            <span class="material-icons">lockalt</span>
+                            <input type="password" placeholder="confirm password" required minlength="5" maxlength="8">
+                            <span class="material-icons">lockopen</span>
                         </div>
-                    </div>
-                    <label> <input type="checkbox"> I Hereby declare the above information provided is true and
-                        correct</label>
-                    <button type="submit" class="btn">Register</button>
+                        <label> <input type="checkbox"> I Hereby declare the above information provided is true and
+                            correct</label>
+                        <button type="submit" class="btn">Register</button>
         </form>
     </div>
 
