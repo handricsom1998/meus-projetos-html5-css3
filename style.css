@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 792px) {
+    .input-box .input-field input::placeholder {
+        font-size: 8px;
+        
+    }
+}
